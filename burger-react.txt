@@ -1,0 +1,141 @@
+<>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger House</title>
+  <link rel="stylesheet" href="style.css" />
+  <main className="main-container">
+    <div className="gradient-right" />
+    <div className="main-nav">
+      <div>
+        <ul className="main-nav__items">
+          <div className="main-nav__item">
+            <li>Menu</li>
+          </div>
+          <div className="main-nav__item">
+            <li>About Us</li>
+          </div>
+          <div className="main-nav__item">
+            <li>
+              <h1>
+                <img src="icons/logo.svg" id="logo" />
+                FAST <span>food</span>
+              </h1>
+            </li>
+          </div>
+          <div className="main-nav__item main-nav__item-cta">
+            <li>
+              <img src="icons/phone.svg" id="phone-icon" />
+              Order Now
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div className="icons">
+        <div>
+          <img src="/icons/shopping-cart.svg" />
+        </div>
+        <div>
+          <img src="/icons/heart.svg" id="heart-icon" />
+        </div>
+      </div>
+    </div>
+    <div className="inner-container">
+      <div className="left-container">
+        <div className="food-details">
+          <div className="food-type">
+            <p>
+              <span>CHICKEN </span>
+            </p>
+            <p>SANDWICH</p>
+          </div>
+          <div className="food-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur curobitur acuumsan auctor
+              pulvinar proin sit amet
+            </p>
+          </div>
+          <div className="food-price">
+            <h1>
+              Total :<span> $24.30</span>
+            </h1>
+          </div>
+          <button type="button" className="buy-button">
+            <div className="button">
+              <div id="buy-button">
+                <img src="/icons/buy-now.svg" />
+              </div>
+              <div>Buy Now</div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div className="right-container">
+        <div className="food-rev-time">
+          <div className="food-duration">
+            <div id="clock-icon">
+              <img src="/icons/clock.svg" />
+            </div>
+            <div>
+              <p>10-18 Mins</p>
+            </div>
+          </div>
+          <div className="food-rating">
+            <div id="star-icon">
+              <img src="/icons/star.svg" />
+            </div>
+            <div>
+              <p>4.9</p>
+            </div>
+          </div>
+        </div>
+        <div className="food-picture">
+          <img src="/images/sandwish.png" />
+        </div>
+        <div className="options">
+          <button className="back-button">
+            <img src="/icons/back.svg" />
+          </button>
+          <div className="food-options">
+            <div className="option">
+              <label htmlFor="radio-1">
+                <input type="radio" id="radio-1" name="radio" />
+                {/* <div class="mini-icon"> */}
+                <img src="/images/mini-pizza.png" />
+                {/* </div> */}
+                <div className="type">Pizza</div>
+                <div className="price">$ 12.80</div>
+              </label>
+            </div>
+            <div className="option">
+              <label htmlFor="radio-2">
+                <input type="radio" id="radio-2" name="radio" />
+                {/* <div class="mini-icon"> */}
+                <img src="/images/mini-burger.png" />
+                {/* </div> */}
+                <div className="type">Burger</div>
+                <div className="price">$ 10.25</div>
+              </label>
+            </div>
+            <div className="option chosen-option">
+              <label htmlFor="radio-3">
+                <input type="radio" id="radio-3" name="radio" />
+                {/* <div class="mini-icon"> */}
+                <img src="/images/mini-sandwish.png" />
+                {/* </div> */}
+                <div className="type">Sandwish</div>
+                <div className="price">$ 12.80</div>
+              </label>
+            </div>
+          </div>
+          <button className="forward-button">
+            <div>
+              <img src="/icons/forward.svg" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div className="gradient-left" />
+    {/* <div class="triangle triangle-5"></div> */}
+  </main>
+</>

@@ -1,0 +1,705 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: BakbakOne-Regular;
+  src: url("/fonts/bakbak/BakbakOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("/fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("/fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Ms-Madi;
+  src: url("/fonts/ms-madi/MsMadi-Regular.ttf");
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  position: relative;
+  /* height: 100vh; */
+  /* background-image: url("/images/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain; */
+}
+
+.gradient-right {
+  /* background-image: url("/images/backgroud-gradient-right.svg"); */
+  /* background: linear-gradient(180deg, #ed1b27 0%, #ed1b27 35%, white 100%);*/
+  background: linear-gradient(180deg, #ed2531 0%, #f2616a 35%, white 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40vw;
+  height: 550px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.main-nav__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  margin-right: 120px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #221516;
+  font-size: 20px;
+  font-family: BakbakOne-Regular;
+}
+
+.main-nav__item h1 {
+  font-size: 45px;
+}
+
+.main-nav__item span {
+  font-family: Ms-Madi;
+  color: #ed1b27;
+  font-size: 50px;
+  margin-left: -20px;
+}
+
+.main-nav__item-cta {
+  background-color: #eda539;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0;
+  vertical-align: middle;
+  margin-right: 75px;
+}
+
+.main-nav__item-cta img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.main-nav__item-cta:hover {
+  background-color: white;
+  transition: ease-in-out 500ms;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo {
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+#heart-icon {
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-container {
+  align-self: flex-start;
+  padding-top: 100px;
+}
+
+.food-type {
+  font-size: 100px;
+  color: #ed1b27;
+  font-family: BakbakOne-Regular;
+}
+
+.food-type p {
+  margin-bottom: 0px;
+  margin-top: -50px;
+}
+
+.food-type span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ed1b27;
+  color: white;
+}
+
+.food-description {
+  width: 350px;
+  margin: 0;
+}
+
+.food-description p {
+  font-size: 20px;
+  color: #372929;
+  font-family: Poppins-Regular;
+  margin: 0;
+}
+
+.food-price {
+  font-family: BakbakOne-Regular;
+  font-size: 25px;
+}
+
+.food-price h1 {
+  margin: 25px 0;
+}
+
+.food-price span {
+  color: #ed1b27;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 40px;
+}
+#buy-button {
+  width: 52px;
+  height: 52px;
+  margin-right: 20px;
+}
+
+.buy-button {
+  background-color: #221516;
+  color: white;
+  vertical-align: middle;
+  font-family: Poppins-Bold;
+  font-size: 26px;
+  border-radius: 24px;
+  border: #221516 solid 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.buy-button:hover {
+  border: #221516 solid 5px;
+  background-color: white;
+  color: #221516;
+  font-size: 26px;
+  transition: ease-out 300ms;
+  border-radius: 24px;
+}
+.right-container {
+  padding-top: 100px;
+}
+
+.food-rev-time {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.food-duration,
+.food-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.food-duration {
+  background-color: #ffdadc;
+  border-radius: 16px;
+  padding: 8px 19px;
+  font-family: Poppins-Medium;
+  font-size: 16px;
+}
+
+.food-duration p,
+.food-rating p {
+  margin: 0;
+  margin-left: 15px;
+}
+
+.food-rating {
+  background-color: #ffeed3;
+  border-radius: 16px;
+  padding: 8px 19px;
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#clock-icon {
+  height: 26px;
+}
+
+#star-icon {
+  height: 26px;
+}
+.food-picture {
+  width: 575px;
+}
+.food-picture img {
+  width: 100%;
+}
+.food-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  background-color: #ffdadc;
+  margin-left: 30px;
+  font-family: Poppins-Semibold;
+  padding: 10px 5px 30px 5px;
+  border-radius: 70px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.option img {
+  background-color: white;
+  border-radius: 50%;
+  border: 9px solid white;
+}
+
+.price {
+  color: #ed1b27;
+}
+
+.mini-icon {
+  border: white 9px solid;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.option input {
+  display: none;
+}
+
+.back-button {
+  background: none;
+  border: none;
+}
+
+.forward-button {
+  margin-left: 30px;
+  background: none;
+  border: none;
+}
+
+.chosen-option {
+  background-color: #eda539;
+}
+
+.gradient-left {
+  background-image: url("/images/gradient-left.svg");
+  /* background: linear-gradient(0deg, #fac8c9 0%, #fac8c9 35%, #fbebd8 100%); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 394px;
+  height: 784px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1920px) {
+  .gradient-left {
+    width: 100%;
+    height: 100%;
+  }
+  .food-type {
+    font-size: 130px;
+  }
+  .food-description {
+    width: 500px;
+  }
+  .food-description p {
+    font-size: 30px;
+  }
+  .food-price {
+    font-size: 30px;
+  }
+  .buy-button {
+    font-size: 40px;
+  }
+  .food-duration,
+  .food-rating {
+    font-size: 25px;
+  }
+  #clock-icon,
+  #star-icon {
+    height: 32px;
+  }
+  .type {
+    font-size: 25px;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .option {
+    padding: 20px 50px 50px 50px;
+    width: 140px;
+    border-radius: 100px;
+  }
+  .option img {
+    border: 18px solid white;
+  }
+}
+
+/* .customers-reviews {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  font-family: BakbakOne-Regular;
+  align-items: center;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+} */
+
+.customers-reviews {
+  margin-top: 100px;
+  font-family: BakbakOne-Regular;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* flex: 1; */
+  /* justify-content: space-around; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.customers-reviews span {
+  font-family: Ms-Madi;
+  color: rgb(237, 28, 39);
+}
+
+.customers-reviews-title {
+  font-size: 30px;
+  /* width: 800px; */
+  text-align: center;
+  font-family: Ms-Madi;
+}
+.custumors-reviews__cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 100px;
+}
+
+.custumors-reviews__card {
+  width: 300px;
+  padding-top: 10px;
+  margin-top: 20px;
+  /* border: #221516 solid 2px; */
+  box-shadow: rgba(237, 28, 39, 0.25) 0px 5px 15px;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  background-color: #ffdadc;
+}
+
+.customers-reviews__quotes {
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: Poppins-Regular;
+}
+
+.custumors-name {
+  font-size: 15px;
+  font-style: italic;
+  font-family: BakbakOne-Regular;
+}
+
+.customers-photo {
+  width: 100px;
+  height: 100px;
+  border: solid 5px white;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  margin: 0 25%;
+}
+
+.customers-photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-us__title {
+  text-align: center;
+  font-size: 60px;
+  font-family: Ms-Madi;
+  margin-top: 8%;
+}
+
+.about-us {
+  font-family: Poppins-Regular;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+.about-us__story h1 {
+  color: black;
+  font-family: Ms-Madi;
+  font-size: 60px;
+  text-align: center;
+}
+.about-us__title span,
+.about-us__story span {
+  color: #ed1b27;
+  font-family: Ms-Madi;
+  font-weight: bold;
+}
+
+.about-us__story {
+  font-size: 20px;
+  /* margin: 150px 80px; */
+  width: 40%;
+}
+
+.about-us__image {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.about-us__image img {
+  width: 100%;
+  border-radius: 5%;
+  margin-left: 50px;
+}
+
+.about-us__image__border {
+  width: 400px;
+  height: 500px;
+  border: #ed1b27 solid 20px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.bubble-background-left {
+  width: 500px;
+  height: 500px;
+  background-color: #f2616a;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: absolute;
+  left: -300px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.bubble-background-right {
+  width: 500px;
+  height: 600px;
+  background-color: #f2616a;
+  border-radius: 30% 70% 70% 10% / 30% 30% 70% 70%;
+  position: absolute;
+  right: 0px;
+  top: -100px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.contact-us__title {
+  font-size: 50px;
+  font-family: Ms-Madi;
+  margin-bottom: 20px;
+}
+
+.contact-us__info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.contact-us__icon {
+  margin-right: 50px;
+}
+
+.contact-us__subtitle {
+  font-size: 20px;
+  font-family: Bakbakone-Regular;
+  margin-bottom: 10px;
+}
+
+.contact-us__subinfo {
+  font-size: 15px;
+  font-family: Poppins-Regular;
+  width: 250px;
+}
+.booking {
+  /* box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff; */
+  border: 3px solid;
+  border-radius: 5px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: rgb(242, 94, 104, 0.25); */
+  /* box-shadow: rgba(237, 28, 39, 0.25) 0px 5px 15px 15px; */
+  /* color: #221516; */
+  color: #ed1b27;
+  width: 40%;
+  /* margin-left: 50px; */
+}
+
+.booking-title {
+  font-family: Ms-Madi;
+  font-size: 60px;
+  text-align: center;
+}
+
+.booking-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 10px;
+  font-size: 30px;
+  font-family: Ms-Madi;
+
+  font-weight: bold;
+}
+
+.info input {
+  /* margin-right: 80px; */
+  border: none;
+  border-bottom: 1px solid #221516;
+  width: 80%;
+  background-color: rgb(242, 94, 104, 0);
+  outline: none;
+}
+
+.booking-information button {
+  background-color: #221516;
+  color: white;
+  font-family: Poppins-Bold;
+  font-size: 20px;
+  border-radius: 24px;
+  border: #221516 solid 5px;
+  padding: 10px 30px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.booking-information button:hover {
+  border: #221516 solid 5px;
+  background-color: white;
+  color: #221516;
+  transition: ease-out 300ms;
+  border-radius: 24px;
+}
+
+.main-footer {
+  background-color: #ed1b27;
+  /* background-image: linear-gradient(
+    to right top,
+    #ed2531,
+    #ef333d,
+    #f03f48,
+    #f14a53,
+    #f2545d,
+    #f76579,
+    #f97793
+  ); */
+
+  /* background-repeat: no-repeat; */
+  padding: 10px;
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  /* height: 300px; */
+}
+
+.main-footer p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-family: Poppins-Regular;
+  /* font-style: italic; */
+}
+
+.main-footer__links {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.main-footer__link {
+  display: inline-block;
+  padding: 10px 10px;
+}
