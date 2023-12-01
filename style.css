@@ -49,8 +49,7 @@
   /* background-image: url("/images/backgroud-gradient-right.svg"); */
   /* background: linear-gradient(180deg, #ed1b27 0%, #ed1b27 35%, white 100%);*/
   background: linear-gradient(180deg, #ed2531 0%, #f2616a 35%, white 100%);
-  background-repeat: no-repeat;
-  background-size: contain;
+
   width: 40vw;
   height: 550px;
   position: absolute;
@@ -418,6 +417,7 @@
 .customers-reviews span {
   font-family: Ms-Madi;
   color: rgb(237, 28, 39);
+  font-weight: bold;
 }
 
 .customers-reviews-title {

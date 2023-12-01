@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: BakbakOne-Regular;
+  src: url("/fonts/bakbak/BakbakOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("/fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("/fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Ms-Madi;
+  src: url("/fonts/ms-madi/MsMadi-Regular.ttf");
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  position: relative;
+  /* height: 100vh; */
+  /* background-image: url("/images/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.gradient-right {
+  /* background-image: url("/images/backgroud-gradient-right.svg"); */
+  /* background: linear-gradient(180deg, #ed1b27 0%, #ed1b27 35%, white 100%);*/
+  background: linear-gradient(180deg, #ed2531 0%, #f2616a 35%, white 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40vw;
+  height: 550px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.main-nav__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  margin-right: 120px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #221516;
+  font-size: 20px;
+  font-family: BakbakOne-Regular;
+}
+
+.main-nav__item h1 {
+  font-size: 45px;
+}
+
+.main-nav__item span {
+  font-family: Ms-Madi;
+  color: #ed1b27;
+  font-size: 50px;
+  margin-left: -20px;
+}
+
+.main-nav__item-cta {
+  background-color: #eda539;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0;
+  vertical-align: middle;
+  margin-right: 75px;
+}
+
+.main-nav__item-cta img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.main-nav__item-cta:hover {
+  background-color: white;
+  transition: ease-in-out 500ms;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo {
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+#heart-icon {
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-categories__title {
+  text-align: center;
+  font-size: 60px;
+  font-family: Ms-Madi;
+  color: #ed2531;
+  margin-top: 90px;
+}
+
+.menu-categories__items {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+.menu-categories__item {
+  /* border: #221516 5px solid; */
+  border-radius: 30px;
+  width: 200px;
+  padding: 20px;
+  background-color: #ffdadc;
+  position: relative;
+}
+
+.menu-item__image {
+  position: absolute;
+  top: -80px;
+  margin: 0 -27%;
+  width: 300px;
+  /* height: 180px; */
+}
+
+.menu-item__image img {
+  width: 90%;
+}
+.menu-item__title {
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: Poppins-Bold;
+  text-align: center;
+}
+
+.menu-item__description {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menu-item__price {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Bakbakone-Regular;
+  color: #ed1b27;
+  padding: 20px;
+}
+
+.add-to-cart {
+  color: white;
+  background-color: #ed1b27;
+  width: 50px;
+  height: 50px;
+  border: none;
+  /* padding: 10px; */
+  border-radius: 50%;
+  font-size: 40px;
+  position: absolute;
+  bottom: -25px;
+  margin: 0 28%;
+}
+.main-footer {
+  background-color: #ed1b27;
+  /* background-image: linear-gradient(
+      to right top,
+      #ed2531,
+      #ef333d,
+      #f03f48,
+      #f14a53,
+      #f2545d,
+      #f76579,
+      #f97793
+    ); */
+
+  /* background-repeat: no-repeat; */
+  padding: 10px;
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  /* height: 300px; */
+}
+
+.main-footer p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-family: Poppins-Regular;
+  /* font-style: italic; */
+}
+
+.main-footer__links {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.main-footer__link {
+  display: inline-block;
+  padding: 10px 10px;
+}
