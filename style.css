@@ -50,7 +50,7 @@
   /* background: linear-gradient(180deg, #ed1b27 0%, #ed1b27 35%, white 100%);*/
   background: linear-gradient(180deg, #ed2531 0%, #f2616a 35%, white 100%);
 
-  width: 40vw;
+  width: 43vw;
   height: 550px;
   position: absolute;
   right: 0;
@@ -90,13 +90,8 @@
 
 .main-nav__item h1 {
   font-size: 45px;
-}
-
-.main-nav__item span {
   font-family: Ms-Madi;
   color: #ed1b27;
-  font-size: 50px;
-  margin-left: -20px;
 }
 
 .main-nav__item-cta {
@@ -110,7 +105,7 @@
 
 .main-nav__item-cta img {
   vertical-align: middle;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .main-nav__item-cta:hover {
@@ -123,11 +118,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-#logo {
-  vertical-align: middle;
-  margin-right: 12px;
 }
 
 #heart-icon {
@@ -388,7 +378,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 70px;
   margin-top: 100px;
 }
 
@@ -717,6 +706,9 @@
     height: 500px;
     margin-top: 30px;
   }
+  .gradient-right {
+    width: 45vw;
+  }
   .about-us__image__border {
     width: 400px;
     height: 400px;
@@ -760,7 +752,10 @@
     margin-right: 40px;
   }
   .main-nav__item h1 {
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .gradient-right {
+    width: 49vw;
   }
   .food-picture {
     width: 400px;
@@ -904,6 +899,9 @@
   .back-button {
     display: none;
   }
+  .custumors-reviews__card {
+    width: 250px;
+  }
 }
 
 @media (min-width: 781px) {
@@ -931,4 +929,51 @@
   background: white;
   display: block;
   margin: 0.6rem 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  margin: 20px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ed1b27;
 }

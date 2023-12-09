@@ -3,9 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burger House</title>
+    <title>Build & Bite</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="shared.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,27 +32,24 @@
           <ul class="main-nav__items">
             <div class="main-nav__item">
               <li>
-                <a href="menu.html">Menu</a>
+                <a href="index.html">Home</a>
               </li>
             </div>
             <div class="main-nav__item">
-              <li><a href="#">About Us</a></li>
+              <li><a href="menu.html">Menu</a></li>
             </div>
             <div class="main-nav__item">
               <li>
                 <a href="index.html">
-                  <h1>
-                    <img src="icons/Asset2.svg" id="logo" />
-                    FAST
-                    <span>food</span>
-                  </h1>
+                  <h1>Build & Bite</h1>
                 </a>
               </li>
             </div>
             <div class="main-nav__item main-nav__item-cta">
               <li>
-                <a href="#"
-                  ><img src="icons/phone.svg" id="phone-icon" />Order Now
+                <a href="/build-burger/dist/index.html">
+                  <!-- <img src="icons/phone.svg" id="phone-icon" /> -->
+                  Build <img src="/icons/logo.svg" /> Burger
                 </a>
               </li>
             </div>
@@ -171,11 +179,12 @@
       <!-- <div class="gradient-left"></div> -->
       <!-- <div class="triangle triangle-5"></div> -->
     </main>
+
     <div class="customers-reviews">
       <div class="customers-reviews-title">
         <h1>A Culinary Journey at <span>Build & Bite</span></h1>
       </div>
-      <div class="custumors-reviews__cards">
+      <!-- <div class="custumors-reviews__cards">
         <div class="custumors-reviews__card">
           <div class="customers-photo">
             <img src="./images/AdobeStock_245563558_Preview.jpeg" />
@@ -198,7 +207,7 @@
           </div>
           <div class="custumors-name">Mary Joe Khoury</div>
         </div>
-        <!-- <div class="custumors-reviews__card">
+        <div class="custumors-reviews__card">
           <div class="customers-photo">
             <img src="./images/AdobeStock_642149237_Preview.jpeg" />
           </div>
@@ -208,7 +217,7 @@
             attentive."
           </div>
           <div class="custumors-name">Mary Joe Khoury</div>
-        </div> -->
+        </div>
         <div class="custumors-reviews__card">
           <div class="customers-photo">
             <img src="./images/AdobeStock_616995050_Preview.jpeg" />
@@ -220,8 +229,102 @@
           </div>
           <div class="custumors-name">Mary Joe Khoury</div>
         </div>
+      </div> -->
+
+      <div #swiperRef="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="custumors-reviews__card">
+              <div class="customers-photo">
+                <img src="./images/AdobeStock_642149237_Preview.jpeg" />
+              </div>
+              <div class="customers-reviews__quotes">
+                "I had an incredible dining experience at<span
+                  >Build & Bite</span
+                >. The ambiance was charming, and the staff were friendly and
+                attentive."
+              </div>
+              <div class="custumors-name">Mary Joe Khoury</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="custumors-reviews__card">
+              <div class="customers-photo">
+                <img src="./images/AdobeStock_642149237_Preview.jpeg" />
+              </div>
+              <div class="customers-reviews__quotes">
+                "I had an incredible dining experience at<span
+                  >Build & Bite</span
+                >. The ambiance was charming, and the staff were friendly and
+                attentive."
+              </div>
+              <div class="custumors-name">Mary Joe Khoury</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="custumors-reviews__card">
+              <div class="customers-photo">
+                <img src="./images/AdobeStock_642149237_Preview.jpeg" />
+              </div>
+              <div class="customers-reviews__quotes">
+                "I had an incredible dining experience at<span
+                  >Build & Bite</span
+                >. The ambiance was charming, and the staff were friendly and
+                attentive."
+              </div>
+              <div class="custumors-name">Mary Joe Khoury</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="custumors-reviews__card">
+              <div class="customers-photo">
+                <img src="./images/AdobeStock_642149237_Preview.jpeg" />
+              </div>
+              <div class="customers-reviews__quotes">
+                "I had an incredible dining experience at<span
+                  >Build & Bite</span
+                >. The ambiance was charming, and the staff were friendly and
+                attentive."
+              </div>
+              <div class="custumors-name">Mary Joe Khoury</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="custumors-reviews__card">
+              <div class="customers-photo">
+                <img src="./images/AdobeStock_642149237_Preview.jpeg" />
+              </div>
+              <div class="customers-reviews__quotes">
+                "I had an incredible dining experience at<span
+                  >Build & Bite</span
+                >. The ambiance was charming, and the staff were friendly and
+                attentive."
+              </div>
+              <div class="custumors-name">Mary Joe Khoury</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="custumors-reviews__card">
+              <div class="customers-photo">
+                <img src="./images/AdobeStock_642149237_Preview.jpeg" />
+              </div>
+              <div class="customers-reviews__quotes">
+                "I had an incredible dining experience at<span
+                  >Build & Bite</span
+                >. The ambiance was charming, and the staff were friendly and
+                attentive."
+              </div>
+              <div class="custumors-name">Mary Joe Khoury</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next" style="color: #ed1b27"></div>
+        <div class="swiper-button-prev" style="color: #ed1b27"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
+
     <h1 class="about-us__title"><span>Build & Bite </span>Story</h1>
     <div class="about-us">
       <div class="about-us__story">
@@ -355,5 +458,7 @@
 
       <p>Copyright &copy All rights reserved 2023</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="test.js"></script>
   </body>
 </html>

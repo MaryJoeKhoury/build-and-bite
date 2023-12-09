@@ -51,7 +51,7 @@
   background: linear-gradient(180deg, #ed2531 0%, #f2616a 35%, white 100%);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 40vw;
+  width: 43vw;
   height: 550px;
   position: absolute;
   right: 0;
@@ -91,13 +91,8 @@
 
 .main-nav__item h1 {
   font-size: 45px;
-}
-
-.main-nav__item span {
   font-family: Ms-Madi;
   color: #ed1b27;
-  font-size: 50px;
-  margin-left: -20px;
 }
 
 .main-nav__item-cta {
@@ -111,7 +106,7 @@
 
 .main-nav__item-cta img {
   vertical-align: middle;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .main-nav__item-cta:hover {
@@ -124,11 +119,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-#logo {
-  vertical-align: middle;
-  margin-right: 12px;
 }
 
 #heart-icon {
@@ -171,7 +161,7 @@
 .menu-item__image {
   position: absolute;
   top: -80px;
-  margin: 0 -27%;
+  margin: 0 -9%;
   width: 300px;
   /* height: 180px; */
 }
