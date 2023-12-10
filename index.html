@@ -9,176 +9,482 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="main-container">
-      <div class="gradient-right"></div>
-      <div class="main-nav">
-        <div>
-          <button class="toggle-button" onclick="myFunction()">
-            <span class="toggle-button__bar"></span>
-            <span class="toggle-button__bar"></span>
-            <span class="toggle-button__bar"></span>
-          </button>
-          <ul class="main-nav__items">
-            <div class="main-nav__item">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-            </div>
-            <div class="main-nav__item">
-              <li><a href="menu.html">Menu</a></li>
-            </div>
-            <div class="main-nav__item">
-              <li>
-                <a href="index.html">
-                  <h1>Build & Bite</h1>
-                </a>
-              </li>
-            </div>
-            <div class="main-nav__item main-nav__item-cta">
-              <li>
-                <a href="/build-burger/dist/index.html">
-                  <!-- <img src="icons/phone.svg" id="phone-icon" /> -->
-                  Build <img src="/icons/logo.svg" /> Burger
-                </a>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="icons">
-          <div>
-            <img src="/icons/shopping-cart.svg" />
-          </div>
-          <div>
-            <img src="/icons/heart.svg" id="heart-icon" />
-          </div>
-        </div>
-      </div>
-
-      <nav class="mobile-nav" id="myDIV" style="display: none">
-        <ul class="mobile-nav__items">
-          <li class="mobile-nav__item">
-            <a href="#">Home</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#">About</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#contact-us">Contact Us</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="mobile-nav--cta">Get Started</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="inner-container">
-        <div class="left-container">
-          <div class="food-details">
-            <div class="food-type">
-              <p><span>CHICKEN </span></p>
-              <p>SANDWICH</p>
-            </div>
-            <div class="food-description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur curobitur acuumsan auctor
-                pulvinar proin sit amet
-              </p>
-            </div>
-            <div class="food-price">
-              <h1>Total :<span> $24.30</span></h1>
-            </div>
-            <button type="button" class="buy-button">
-              <div class="button">
-                <div id="buy-button">
-                  <img src="/icons/buy-now.svg" />
+    <div class="swiper banner-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <main class="main-container">
+            <div class="gradient-right"></div>
+            <div class="main-nav">
+              <div>
+                <button class="toggle-button" onclick="myFunction()">
+                  <span class="toggle-button__bar"></span>
+                  <span class="toggle-button__bar"></span>
+                  <span class="toggle-button__bar"></span>
+                </button>
+                <ul class="main-nav__items">
+                  <div class="main-nav__item">
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+                  </div>
+                  <div class="main-nav__item">
+                    <li><a href="menu.html">Menu</a></li>
+                  </div>
+                  <div class="main-nav__item">
+                    <li>
+                      <a href="index.html">
+                        <h1>Build & Bite</h1>
+                      </a>
+                    </li>
+                  </div>
+                  <div class="main-nav__item main-nav__item-cta">
+                    <li>
+                      <a href="/build-burger/dist/index.html">
+                        <!-- <img src="icons/phone.svg" id="phone-icon" /> -->
+                        Build <img src="/icons/logo.svg" /> Burger
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="icons">
+                <div>
+                  <img src="/icons/shopping-cart.svg" />
                 </div>
-                <div>Buy Now</div>
+                <div>
+                  <img src="/icons/heart.svg" id="heart-icon" />
+                </div>
               </div>
-            </button>
-          </div>
+            </div>
+
+            <nav class="mobile-nav" id="myDIV" style="display: none">
+              <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#">About</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#contact-us">Contact Us</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="mobile-nav--cta">Get Started</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="inner-container">
+              <div class="left-container">
+                <div class="food-details">
+                  <div class="food-type">
+                    <p><span>LARGE </span></p>
+                    <p>BURGER</p>
+                  </div>
+                  <div class="food-description">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur curobitur acuumsan
+                      auctor pulvinar proin sit amet
+                    </p>
+                  </div>
+                  <div class="food-price">
+                    <h1>Total :<span> $10.25</span></h1>
+                  </div>
+                  <button type="button" class="buy-button">
+                    <div class="button">
+                      <div id="buy-button">
+                        <img src="/icons/buy-now.svg" />
+                      </div>
+                      <div>Buy Now</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="right-container">
+                <div class="food-rev-time">
+                  <div class="food-duration">
+                    <div id="clock-icon">
+                      <img src="/icons/clock.svg" />
+                    </div>
+                    <div>
+                      <p>10-18 Mins</p>
+                    </div>
+                  </div>
+                  <div class="food-rating">
+                    <div id="star-icon">
+                      <img src="/icons/star.svg" />
+                    </div>
+                    <div>
+                      <p>4.9</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="food-picture">
+                  <img src="/images-1/Group 1.png" />
+                </div>
+                <div class="options">
+                  <div class="food-options">
+                    <div class="option">
+                      <label for="radio-1">
+                        <input type="radio" id="radio-1" name="radio" />
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-pizza.png" />
+                        <!-- </div> -->
+                        <div class="type">Pizza</div>
+                        <div class="price">$ 12.80</div>
+                      </label>
+                    </div>
+
+                    <div class="option chosen-option">
+                      <label for="radio-2">
+                        <input type="radio" id="radio-2" name="radio" />
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-burger.png" />
+                        <!-- </div> -->
+                        <div class="type">Burger</div>
+                        <div class="price">$ 10.25</div>
+                      </label>
+                    </div>
+
+                    <div class="option">
+                      <label for="radio-3">
+                        <input type="radio" id="radio-3" name="radio" />
+
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-sandwish.png" />
+                        <!-- </div> -->
+                        <div class="type">Sandwish</div>
+                        <div class="price">$ 12.80</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="gradient-left"></div> -->
+            <!-- <div class="triangle triangle-5"></div> -->
+          </main>
         </div>
-
-        <div class="right-container">
-          <div class="food-rev-time">
-            <div class="food-duration">
-              <div id="clock-icon">
-                <img src="/icons/clock.svg" />
-              </div>
+        <div class="swiper-slide">
+          <main class="main-container">
+            <div class="gradient-right"></div>
+            <div class="main-nav">
               <div>
-                <p>10-18 Mins</p>
+                <button class="toggle-button" onclick="myFunction()">
+                  <span class="toggle-button__bar"></span>
+                  <span class="toggle-button__bar"></span>
+                  <span class="toggle-button__bar"></span>
+                </button>
+                <ul class="main-nav__items">
+                  <div class="main-nav__item">
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+                  </div>
+                  <div class="main-nav__item">
+                    <li><a href="menu.html">Menu</a></li>
+                  </div>
+                  <div class="main-nav__item">
+                    <li>
+                      <a href="index.html">
+                        <h1>Build & Bite</h1>
+                      </a>
+                    </li>
+                  </div>
+                  <div class="main-nav__item main-nav__item-cta">
+                    <li>
+                      <a href="/build-burger/dist/index.html">
+                        <!-- <img src="icons/phone.svg" id="phone-icon" /> -->
+                        Build <img src="/icons/logo.svg" /> Burger
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="icons">
+                <div>
+                  <img src="/icons/shopping-cart.svg" />
+                </div>
+                <div>
+                  <img src="/icons/heart.svg" id="heart-icon" />
+                </div>
               </div>
             </div>
-            <div class="food-rating">
-              <div id="star-icon">
-                <img src="/icons/star.svg" />
+
+            <nav class="mobile-nav" id="myDIV" style="display: none">
+              <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#">About</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#contact-us">Contact Us</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="mobile-nav--cta">Get Started</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="inner-container">
+              <div class="left-container">
+                <div class="food-details">
+                  <div class="food-type">
+                    <p><span>CHICKEN </span></p>
+                    <p>SANDWICH</p>
+                  </div>
+                  <div class="food-description">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur curobitur acuumsan
+                      auctor pulvinar proin sit amet
+                    </p>
+                  </div>
+                  <div class="food-price">
+                    <h1>Total :<span> $12.80</span></h1>
+                  </div>
+                  <button type="button" class="buy-button">
+                    <div class="button">
+                      <div id="buy-button">
+                        <img src="/icons/buy-now.svg" />
+                      </div>
+                      <div>Buy Now</div>
+                    </div>
+                  </button>
+                </div>
               </div>
-              <div>
-                <p>4.9</p>
+
+              <div class="right-container">
+                <div class="food-rev-time">
+                  <div class="food-duration">
+                    <div id="clock-icon">
+                      <img src="/icons/clock.svg" />
+                    </div>
+                    <div>
+                      <p>10-18 Mins</p>
+                    </div>
+                  </div>
+                  <div class="food-rating">
+                    <div id="star-icon">
+                      <img src="/icons/star.svg" />
+                    </div>
+                    <div>
+                      <p>4.9</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="food-picture">
+                  <img src="/images/sandwish.png" />
+                </div>
+                <div class="options">
+                  <div class="food-options">
+                    <div class="option">
+                      <label for="radio-1">
+                        <input type="radio" id="radio-1" name="radio" />
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-pizza.png" />
+                        <!-- </div> -->
+                        <div class="type">Pizza</div>
+                        <div class="price">$ 12.80</div>
+                      </label>
+                    </div>
+
+                    <div class="option">
+                      <label for="radio-2">
+                        <input type="radio" id="radio-2" name="radio" />
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-burger.png" />
+                        <!-- </div> -->
+                        <div class="type">Burger</div>
+                        <div class="price">$ 10.25</div>
+                      </label>
+                    </div>
+
+                    <div class="option chosen-option">
+                      <label for="radio-3">
+                        <input type="radio" id="radio-3" name="radio" />
+
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-sandwish.png" />
+                        <!-- </div> -->
+                        <div class="type">Sandwish</div>
+                        <div class="price">$ 12.80</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="food-picture">
-            <img src="/images-1/Group 1.png" />
-          </div>
-          <div class="options">
-            <button class="back-button">
-              <img src="/icons/back.svg" />
-            </button>
-            <div class="food-options">
-              <div class="option">
-                <label for="radio-1">
-                  <input type="radio" id="radio-1" name="radio" />
-                  <!-- <div class="mini-icon"> -->
-                  <img src="/images/mini-pizza.png" />
-                  <!-- </div> -->
-                  <div class="type">Pizza</div>
-                  <div class="price">$ 12.80</div>
-                </label>
-              </div>
-
-              <div class="option">
-                <label for="radio-2">
-                  <input type="radio" id="radio-2" name="radio" />
-                  <!-- <div class="mini-icon"> -->
-                  <img src="/images/mini-burger.png" />
-                  <!-- </div> -->
-                  <div class="type">Burger</div>
-                  <div class="price">$ 10.25</div>
-                </label>
-              </div>
-
-              <div class="option chosen-option">
-                <label for="radio-3">
-                  <input type="radio" id="radio-3" name="radio" />
-
-                  <!-- <div class="mini-icon"> -->
-                  <img src="/images/mini-sandwish.png" />
-                  <!-- </div> -->
-                  <div class="type">Sandwish</div>
-                  <div class="price">$ 12.80</div>
-                </label>
-              </div>
-            </div>
-            <button class="forward-button">
-              <div><img src="/icons/forward.svg" /></div>
-            </button>
-          </div>
+            <!-- <div class="gradient-left"></div> -->
+            <!-- <div class="triangle triangle-5"></div> -->
+          </main>
         </div>
+        <div class="swiper-slide">
+          <main class="main-container">
+            <div class="gradient-right"></div>
+            <div class="main-nav">
+              <div>
+                <button class="toggle-button" onclick="myFunction()">
+                  <span class="toggle-button__bar"></span>
+                  <span class="toggle-button__bar"></span>
+                  <span class="toggle-button__bar"></span>
+                </button>
+                <ul class="main-nav__items">
+                  <div class="main-nav__item">
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+                  </div>
+                  <div class="main-nav__item">
+                    <li><a href="menu.html">Menu</a></li>
+                  </div>
+                  <div class="main-nav__item">
+                    <li>
+                      <a href="index.html">
+                        <h1>Build & Bite</h1>
+                      </a>
+                    </li>
+                  </div>
+                  <div class="main-nav__item main-nav__item-cta">
+                    <li>
+                      <a href="/build-burger/dist/index.html">
+                        <!-- <img src="icons/phone.svg" id="phone-icon" /> -->
+                        Build <img src="/icons/logo.svg" /> Burger
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="icons">
+                <div>
+                  <img src="/icons/shopping-cart.svg" />
+                </div>
+                <div>
+                  <img src="/icons/heart.svg" id="heart-icon" />
+                </div>
+              </div>
+            </div>
+
+            <nav class="mobile-nav" id="myDIV" style="display: none">
+              <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#">About</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#contact-us">Contact Us</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="mobile-nav--cta">Get Started</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="inner-container">
+              <div class="left-container">
+                <div class="food-details">
+                  <div class="food-type">
+                    <p><span>PIZZA </span></p>
+                    <p>PEPPERONI</p>
+                  </div>
+                  <div class="food-description">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur curobitur acuumsan
+                      auctor pulvinar proin sit amet
+                    </p>
+                  </div>
+                  <div class="food-price">
+                    <h1>Total :<span> $12.80</span></h1>
+                  </div>
+                  <button type="button" class="buy-button">
+                    <div class="button">
+                      <div id="buy-button">
+                        <img src="/icons/buy-now.svg" />
+                      </div>
+                      <div>Buy Now</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="right-container">
+                <div class="food-rev-time">
+                  <div class="food-duration">
+                    <div id="clock-icon">
+                      <img src="/icons/clock.svg" />
+                    </div>
+                    <div>
+                      <p>10-18 Mins</p>
+                    </div>
+                  </div>
+                  <div class="food-rating">
+                    <div id="star-icon">
+                      <img src="/icons/star.svg" />
+                    </div>
+                    <div>
+                      <p>4.9</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="food-picture">
+                  <img src="/images/pizza.png" />
+                </div>
+                <div class="options">
+                  <div class="food-options">
+                    <div class="option chosen-option">
+                      <label for="radio-1">
+                        <input type="radio" id="radio-1" name="radio" />
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-pizza.png" />
+                        <!-- </div> -->
+                        <div class="type">Pizza</div>
+                        <div class="price">$ 12.80</div>
+                      </label>
+                    </div>
+
+                    <div class="option">
+                      <label for="radio-2">
+                        <input type="radio" id="radio-2" name="radio" />
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-burger.png" />
+                        <!-- </div> -->
+                        <div class="type">Burger</div>
+                        <div class="price">$ 10.25</div>
+                      </label>
+                    </div>
+
+                    <div class="option">
+                      <label for="radio-3">
+                        <input type="radio" id="radio-3" name="radio" />
+
+                        <!-- <div class="mini-icon"> -->
+                        <img src="/images/mini-sandwish.png" />
+                        <!-- </div> -->
+                        <div class="type">Sandwish</div>
+                        <div class="price">$ 12.80</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="gradient-left"></div> -->
+            <!-- <div class="triangle triangle-5"></div> -->
+          </main>
+        </div>
+        <!-- <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div> -->
       </div>
-      <!-- <div class="gradient-left"></div> -->
-      <!-- <div class="triangle triangle-5"></div> -->
-    </main>
+    </div>
 
     <div class="customers-reviews">
       <div class="customers-reviews-title">
@@ -231,7 +537,7 @@
         </div>
       </div> -->
 
-      <div #swiperRef="" class="swiper mySwiper">
+      <div #swiperef="" class="swiper review-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="custumors-reviews__card">

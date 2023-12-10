@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".review-swiper", {
   slidesPerView: 3,
   // centeredSlides: true,
   spaceBetween: 30,
@@ -39,4 +39,10 @@ const swiper = new Swiper(".swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+});
+
+const bannerSwiper = new Swiper(".banner-swiper", {
+  // swiper code here
+  effect: "cards",
+  grabCursor: true,
 });

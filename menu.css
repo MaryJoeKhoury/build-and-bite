@@ -156,18 +156,26 @@
   padding: 20px;
   background-color: #ffdadc;
   position: relative;
+  cursor: pointer;
 }
 
 .menu-item__image {
   position: absolute;
-  top: -80px;
-  margin: 0 -9%;
-  width: 300px;
+  top: -60px;
+  margin: 0 8px;
+  width: 200px;
   /* height: 180px; */
 }
+.menu-categories__item:hover .menu-item__image {
+  transition: transform 250ms;
+  transform: translateY(-30px);
+}
 
+.menu-categories__item:hover {
+  box-shadow: 20px 20px 20px #ebebeb;
+}
 .menu-item__image img {
-  width: 90%;
+  width: 150px;
 }
 .menu-item__title {
   margin-top: 50px;
