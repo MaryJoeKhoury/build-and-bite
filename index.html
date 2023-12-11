@@ -23,12 +23,36 @@
     <main class="main-container">
       <div class="gradient-right"></div>
       <div class="main-nav">
+        <!-- <button class="toggle-button" onclick="myFunction()">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+          </button> -->
+        <div class="container">
+          <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+          <input id="toggle" type="checkbox" />
+
+          <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+          <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+          <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+          </label>
+
+          <!-- The nav menu -->
+          <nav class="nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="menu.html">menu</a>
+            <a class="nav-item" href="/build-burger/dist/index.html"
+              >Build Burger</a
+            >
+          </nav>
+
+          <!-- Just dummy content like in the animated gif -->
+        </div>
+        <h1 class="mobile-logo">Build & Bite</h1>
         <div>
-          <button class="toggle-button" onclick="myFunction()">
-            <span class="toggle-button__bar"></span>
-            <span class="toggle-button__bar"></span>
-            <span class="toggle-button__bar"></span>
-          </button>
           <ul class="main-nav__items">
             <div class="main-nav__item">
               <li>
@@ -55,6 +79,7 @@
             </div>
           </ul>
         </div>
+
         <div class="icons">
           <div>
             <img src="/icons/shopping-cart.svg" />
@@ -86,8 +111,8 @@
         <div class="left-container">
           <div class="food-details">
             <div class="food-type">
-              <p><span>CHICKEN </span></p>
-              <p>SANDWICH</p>
+              <p><span>LARGE </span></p>
+              <p>BURGER</p>
             </div>
             <div class="food-description">
               <p>
@@ -96,7 +121,7 @@
               </p>
             </div>
             <div class="food-price">
-              <h1>Total :<span> $24.30</span></h1>
+              <h1>Total :<span> $10.30</span></h1>
             </div>
             <button type="button" class="buy-button">
               <div class="button">
@@ -131,7 +156,7 @@
           <div class="food-picture">
             <img src="/images-1/Group 1.png" />
           </div>
-          <div class="options">
+          <!-- <div class="options">
             <button class="back-button">
               <img src="/icons/back.svg" />
             </button>
@@ -139,9 +164,9 @@
               <div class="option">
                 <label for="radio-1">
                   <input type="radio" id="radio-1" name="radio" />
-                  <!-- <div class="mini-icon"> -->
+                  <div class="mini-icon">
                   <img src="/images/mini-pizza.png" />
-                  <!-- </div> -->
+                  </div>
                   <div class="type">Pizza</div>
                   <div class="price">$ 12.80</div>
                 </label>
@@ -150,9 +175,9 @@
               <div class="option">
                 <label for="radio-2">
                   <input type="radio" id="radio-2" name="radio" />
-                  <!-- <div class="mini-icon"> -->
+                  <div class="mini-icon">
                   <img src="/images/mini-burger.png" />
-                  <!-- </div> -->
+                  </div>
                   <div class="type">Burger</div>
                   <div class="price">$ 10.25</div>
                 </label>
@@ -162,9 +187,9 @@
                 <label for="radio-3">
                   <input type="radio" id="radio-3" name="radio" />
 
-                  <!-- <div class="mini-icon"> -->
+                  <div class="mini-icon">
                   <img src="/images/mini-sandwish.png" />
-                  <!-- </div> -->
+                  </div>
                   <div class="type">Sandwish</div>
                   <div class="price">$ 12.80</div>
                 </label>
@@ -173,7 +198,7 @@
             <button class="forward-button">
               <div><img src="/icons/forward.svg" /></div>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- <div class="gradient-left"></div> -->
@@ -418,7 +443,7 @@
             </select>
           </div>
           <div class="info">
-            <label for="fname">Phone</label>
+            <label for="fname">Time</label>
             <input type="time" id="fname" name="fname" />
           </div>
           <div class="info">

@@ -12,11 +12,33 @@
     <main class="main-container">
       <div class="gradient-right"></div>
       <div class="main-nav">
-        <button class="toggle-button" onclick="myFunction()">
+        <!-- <button class="toggle-button" onclick="myFunction()">
           <span class="toggle-button__bar"></span>
           <span class="toggle-button__bar"></span>
           <span class="toggle-button__bar"></span>
-        </button>
+        </button> -->
+        <div class="container-1">
+          <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+          <input id="toggle" type="checkbox" />
+
+          <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+          <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+          <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+          </label>
+
+          <!-- The nav menu -->
+          <nav class="nav">
+            <a class="nav-item" href="/index.html">Home</a>
+            <a class="nav-item" href="/menu.html">menu</a>
+            <a class="nav-item" href="index.html">Build Burger</a>
+          </nav>
+
+          <!-- Just dummy content like in the animated gif -->
+        </div>
+        <h1 class="mobile-logo">Build & Bite</h1>
         <div>
           <ul class="main-nav__items">
             <div class="main-nav__item">

@@ -12,11 +12,35 @@
     <main class="main-container">
       <div class="gradient-right"></div>
       <div class="main-nav">
-        <button class="toggle-button" onclick="myFunction()">
+        <!-- <button class="toggle-button" onclick="myFunction()">
           <span class="toggle-button__bar"></span>
           <span class="toggle-button__bar"></span>
           <span class="toggle-button__bar"></span>
-        </button>
+        </button> -->
+        <div class="container">
+          <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+          <input id="toggle" type="checkbox" />
+
+          <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+          <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+          <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+          </label>
+
+          <!-- The nav menu -->
+          <nav class="nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="menu.html">menu</a>
+            <a class="nav-item" href="/build-burger/dist/index.html"
+              >Build Burger</a
+            >
+          </nav>
+
+          <!-- Just dummy content like in the animated gif -->
+        </div>
+        <h1 class="mobile-logo">Build & Bite</h1>
         <div>
           <ul class="main-nav__items">
             <div class="main-nav__item">
@@ -57,11 +81,11 @@
 
     <div class="menu">
       <div class="menu-categories">
-        <h1 class="menu-categories__title">Apetizers</h1>
+        <h1 class="menu-categories__title">Burgers</h1>
         <div class="menu-categories__items">
           <div class="menu-categories__item">
             <div class="menu-item__image">
-              <img src="/images-1/menu-burger.png" />
+              <img src="/images-1/Group 1.png" />
             </div>
 
             <h2 class="menu-item__title">HAMBURGER</h2>
@@ -69,66 +93,7 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
-            </div>
-            <button class="add-to-cart">+</button>
-          </div>
-          <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images-1/menu-1.png" />
-            </div>
-
-            <h2 class="menu-item__title">HAMBURGER</h2>
-            <div class="menu-item__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </div>
-            <div class="menu-item__price">
-              <p>$10</p>
-            </div>
-            <button class="add-to-cart">+</button>
-          </div>
-          <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images/burgers/Big-Mac-PNG-Image-File.png" />
-            </div>
-
-            <h4 class="menu-item__title">HAMBURGER</h4>
-            <div class="menu-item__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </div>
-            <div class="menu-item__price">
-              <p>$10</p>
-            </div>
-            <button class="add-to-cart">+</button>
-          </div>
-          <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images/burgers/PngItem_4880880.png" />
-            </div>
-
-            <h2 class="menu-item__title">HAMBURGER</h2>
-            <div class="menu-item__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </div>
-            <div class="menu-item__price">
-              <p>$10</p>
-            </div>
-            <button class="add-to-cart">+</button>
-          </div>
-        </div>
-        <h1 class="menu-categories__title">Pizzas</h1>
-        <div class="menu-categories__items">
-          <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images/burgers/Big-Mac-PNG-Photo.png" />
-            </div>
-
-            <h2 class="menu-item__title">HAMBURGER</h2>
-            <div class="menu-item__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </div>
-            <div class="menu-item__price">
-              <p>$10</p>
+              <p>$7</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
@@ -142,13 +107,13 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
+              <p>$5</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
           <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images/burgers/PngItem_1456652.png" />
+            <div class="menu-item__image" style="top: -70px">
+              <img src="/images/burgers/Big-Mac-PNG-File.png" />
             </div>
 
             <h4 class="menu-item__title">HAMBURGER</h4>
@@ -156,13 +121,16 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
+              <p>$6.5</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
           <div class="menu-categories__item">
             <div class="menu-item__image">
-              <img src="/images/burgers/PngItem_3352860.png" />
+              <img
+                src="/images/burgers/Big-Mac-PNG-Photo.png"
+                style="margin-left: 10px"
+              />
             </div>
 
             <h2 class="menu-item__title">HAMBURGER</h2>
@@ -170,19 +138,19 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
+              <p>$8</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
         </div>
-        <h1 class="menu-categories__title">Burgers</h1>
+        <h1 class="menu-categories__title">Pizzas</h1>
         <div class="menu-categories__items">
           <div class="menu-categories__item">
             <div class="menu-item__image">
-              <img src="/images-1/ezgif-4-d39a3d5567-removebg-preview.png" />
+              <img src="/images/pizza.png" />
             </div>
 
-            <h2 class="menu-item__title">HAMBURGER</h2>
+            <h2 class="menu-item__title">PIZZA</h2>
             <div class="menu-item__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
@@ -192,44 +160,106 @@
             <button class="add-to-cart">+</button>
           </div>
           <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images-1/ezgif-4-d39a3d5567-removebg-preview.png" />
+            <div class="menu-item__image" style="top: -40px">
+              <img src="/images/pizzas/pizza-2.png" />
             </div>
 
-            <h2 class="menu-item__title">HAMBURGER</h2>
+            <h2 class="menu-item__title">PIZZA</h2>
             <div class="menu-item__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
+              <p>$9.5</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
           <div class="menu-categories__item">
             <div class="menu-item__image">
-              <img src="/images-1/ezgif-4-d39a3d5567-removebg-preview.png" />
+              <img src="/images/pizzas/pizza-3.png" />
             </div>
 
-            <h4 class="menu-item__title">HAMBURGER</h4>
+            <h4 class="menu-item__title">PIZZA</h4>
             <div class="menu-item__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
+              <p>$8</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
           <div class="menu-categories__item">
-            <div class="menu-item__image">
-              <img src="/images-1/ezgif-4-d39a3d5567-removebg-preview.png" />
+            <div class="menu-item__image" style="top: -40px">
+              <img src="/images/pizzas/pizza-1.png" />
             </div>
 
-            <h2 class="menu-item__title">HAMBURGER</h2>
+            <h2 class="menu-item__title">PIZZA</h2>
             <div class="menu-item__description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
             <div class="menu-item__price">
-              <p>$10</p>
+              <p>$7.5</p>
+            </div>
+            <button class="add-to-cart">+</button>
+          </div>
+        </div>
+        <h1 class="menu-categories__title">Drinks</h1>
+        <div class="menu-categories__items">
+          <div class="menu-categories__item">
+            <div class="menu-item__image" style="top: -60px">
+              <img
+                src="/images/drinks/klipartz.com.png"
+                style="width: 60px; margin: 0 28px"
+              />
+            </div>
+
+            <h2 class="menu-item__title">PESPI</h2>
+            <div class="menu-item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="menu-item__price">
+              <p>$1.5</p>
+            </div>
+            <button class="add-to-cart">+</button>
+          </div>
+          <div class="menu-categories__item">
+            <div class="menu-item__image" style="top: -70px">
+              <img style="width: 130px" src="/images/drinks/pngegg.png" />
+            </div>
+
+            <h2 class="menu-item__title">MIRINDA</h2>
+            <div class="menu-item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="menu-item__price">
+              <p>$1.5</p>
+            </div>
+            <button class="add-to-cart">+</button>
+          </div>
+          <div class="menu-categories__item">
+            <div class="menu-item__image" style="top: -60px; margin: 0 20px">
+              <img src="/images/drinks/PngItem_2924118.png" />
+            </div>
+
+            <h4 class="menu-item__title">7UP</h4>
+            <div class="menu-item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="menu-item__price">
+              <p>$1</p>
+            </div>
+            <button class="add-to-cart">+</button>
+          </div>
+          <div class="menu-categories__item">
+            <div class="menu-item__image" style="top: -70px; margin: 0 15px">
+              <img src="/images/drinks/water.png" />
+            </div>
+
+            <h2 class="menu-item__title">WATER</h2>
+            <div class="menu-item__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="menu-item__price">
+              <p>$0.5</p>
             </div>
             <button class="add-to-cart">+</button>
           </div>
