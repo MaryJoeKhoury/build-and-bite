@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build & Bite</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shopping-cart.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="gradient-right"></div>
+      <div class="main-nav">
+        <!-- <button class="toggle-button" onclick="myFunction()">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+          </button> -->
+        <div class="container">
+          <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+          <input id="toggle" type="checkbox" />
+
+          <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+          <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+          <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+          </label>
+
+          <!-- The nav menu -->
+          <nav class="nav">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="menu.html">menu</a>
+            <a class="nav-item" href="/build-burger/dist/index.html"
+              >Build Burger</a
+            >
+          </nav>
+
+          <!-- Just dummy content like in the animated gif -->
+        </div>
+        <h1 class="mobile-logo">Build & Bite</h1>
+        <div>
+          <ul class="main-nav__items">
+            <div class="main-nav__item">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            </div>
+            <div class="main-nav__item">
+              <li><a href="menu.html">Menu</a></li>
+            </div>
+            <div class="main-nav__item">
+              <li>
+                <a href="index.html">
+                  <h1>Build & Bite</h1>
+                </a>
+              </li>
+            </div>
+            <div class="main-nav__item main-nav__item-cta">
+              <li>
+                <a href="/build-burger/dist/index.html">
+                  <!-- <img src="icons/phone.svg" id="phone-icon" /> -->
+                  Build <img src="/icons/logo.svg" /> Burger
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="icons">
+          <div>
+            <a href="shopping-cart.html">
+              <img src="/icons/shopping-cart.svg"
+            /></a>
+          </div>
+          <div>
+            <a href="#"> <img src="/icons/heart.svg" id="heart-icon" /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="empty-cart">
+      <img src="/icons/broken-heart-2.svg" />
+      <p>No items in you favorites...</p>
+    </div>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="https://instagram.com" target="_blank">
+              <img src="/icons/instagram-icon.svg" />
+            </a>
+          </li>
+          <li class="main-footer__link">
+            <a href="https://facebook.com" target="_blank">
+              <img src="/icons/white-facebook-icon.svg" />
+            </a>
+          </li>
+          <li class="main-footer__link">
+            <a href="https://twitter.com" target="_blank">
+              <img src="/icons/white-twitter-icon.svg" />
+            </a>
+          </li>
+          <li class="main-footer__link">
+            <a href="http://tiktok.com" target="_blank">
+              <img src="/icons/tik-tok-icon.svg" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>Copyright &copy All rights reserved 2023</p>
+    </footer>
+  </body>
+</html>

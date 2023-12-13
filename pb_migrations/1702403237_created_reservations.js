@@ -1,43 +1,16 @@
 /// <reference path="../pb_data/types.d.ts" />
 migrate((db) => {
   const collection = new Collection({
-    "id": "u5fgftjqq72okjs",
-    "created": "2023-12-11 09:10:06.038Z",
-    "updated": "2023-12-11 09:10:06.038Z",
-    "name": "table_reservation",
+    "id": "l1b1akf6hco16ko",
+    "created": "2023-12-12 17:47:17.027Z",
+    "updated": "2023-12-12 17:47:17.027Z",
+    "name": "reservations",
     "type": "base",
     "system": false,
     "schema": [
       {
         "system": false,
-        "id": "zvnly0xe",
-        "name": "field",
-        "type": "email",
-        "required": false,
-        "presentable": false,
-        "unique": false,
-        "options": {
-          "exceptDomains": null,
-          "onlyDomains": null
-        }
-      },
-      {
-        "system": false,
-        "id": "woi07att",
-        "name": "phone_number",
-        "type": "number",
-        "required": false,
-        "presentable": false,
-        "unique": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "noDecimal": false
-        }
-      },
-      {
-        "system": false,
-        "id": "bu3gdglm",
+        "id": "rdqxwp0j",
         "name": "name",
         "type": "text",
         "required": false,
@@ -51,21 +24,21 @@ migrate((db) => {
       },
       {
         "system": false,
-        "id": "jgbkqcwf",
-        "name": "date",
-        "type": "date",
+        "id": "6c5hzucp",
+        "name": "email",
+        "type": "email",
         "required": false,
         "presentable": false,
         "unique": false,
         "options": {
-          "min": "",
-          "max": ""
+          "exceptDomains": null,
+          "onlyDomains": null
         }
       },
       {
         "system": false,
-        "id": "wgpj99cr",
-        "name": "time",
+        "id": "ygtpfbsy",
+        "name": "phone",
         "type": "text",
         "required": false,
         "presentable": false,
@@ -78,8 +51,36 @@ migrate((db) => {
       },
       {
         "system": false,
-        "id": "wycvpfyk",
+        "id": "3ud4tqo3",
         "name": "city",
+        "type": "text",
+        "required": false,
+        "presentable": false,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "system": false,
+        "id": "rx0y7iio",
+        "name": "date",
+        "type": "text",
+        "required": false,
+        "presentable": false,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "system": false,
+        "id": "eh6ddstw",
+        "name": "time",
         "type": "text",
         "required": false,
         "presentable": false,
@@ -93,17 +94,17 @@ migrate((db) => {
     ],
     "indexes": [],
     "listRule": null,
-    "viewRule": null,
-    "createRule": null,
-    "updateRule": null,
-    "deleteRule": null,
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": "",
     "options": {}
   });
 
   return Dao(db).saveCollection(collection);
 }, (db) => {
   const dao = new Dao(db);
-  const collection = dao.findCollectionByNameOrId("u5fgftjqq72okjs");
+  const collection = dao.findCollectionByNameOrId("l1b1akf6hco16ko");
 
   return dao.deleteCollection(collection);
 })

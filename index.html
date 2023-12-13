@@ -17,6 +17,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -82,10 +87,14 @@
 
         <div class="icons">
           <div>
-            <img src="/icons/shopping-cart.svg" />
+            <a href="shopping-cart.html">
+              <img src="/icons/shopping-cart.svg"
+            /></a>
           </div>
           <div>
-            <img src="/icons/heart.svg" id="heart-icon" />
+            <a href="favorite.html">
+              <img src="/icons/heart.svg" id="heart-icon"
+            /></a>
           </div>
         </div>
       </div>
@@ -383,7 +392,13 @@
           <div>
             <h3 class="contact-us__subtitle">Address</h3>
             <div class="contact-us__subinfo">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/Adenta+Lab/@33.8409339,35.9104907,17z/data=!3m1!4b1!4m6!3m5!1s0x151f3532f0b643ab:0xc6564a71448ac6dd!8m2!3d33.8409339!4d35.9130656!16s%2Fg%2F11kc0d7xdw?entry=ttu"
+                  target="_blank"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -394,8 +409,8 @@
           <div>
             <h3 class="contact-us__subtitle">Our Phone</h3>
             <div class="contact-us__subinfo">
-              <p>Phone:08801111</p>
-              <p>Mobile:71000000</p>
+              <p><a href="telto:088001111">Phone:08801111</a></p>
+              <p><a href="telto:71000000">Mobile:71000000</a></p>
             </div>
           </div>
         </div>
@@ -406,8 +421,14 @@
           <div>
             <h3 class="contact-us__subtitle">Our Email</h3>
             <div class="contact-us__subinfo">
-              <p>info@gmail.com</p>
-              <p>support@gmail.com</p>
+              <p>
+                <a href="mailto:info@buildandbite.com">info@buildandbite.com</a>
+              </p>
+              <p>
+                <a href="mailto:support@buildandbite.com"
+                  >support@buildandbite.com</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -415,22 +436,22 @@
       <div class="booking">
         <h1 class="booking-title">Book Your Table</h1>
 
-        <form class="booking-information">
+        <form id="bookingForm" class="booking-information">
           <div class="info">
-            <label for="fname">Name</label>
-            <input type="text" />
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name" required />
           </div>
           <div class="info">
-            <label for="lname">Email</label>
-            <input type="email" />
+            <label for="email">Email </label>
+            <input id="email" type="email" name="email" required />
           </div>
           <div class="info">
-            <label for="fname">Phone</label>
-            <input type="text" id="fname" name="fname" />
+            <label for="phone">Phone </label>
+            <input type="text" id="phone" name="phone" required />
           </div>
           <div class="info">
-            <label for="country">Country</label>
-            <select id="country" name="country" class="form-control">
+            <label for="city">City </label>
+            <select id="city" name="city" class="form-control" required>
               <option value="zahle">Zahle</option>
               <option value="beirut">Beirut</option>
               <option value="baalbek">Baalbek</option>
@@ -443,14 +464,14 @@
             </select>
           </div>
           <div class="info">
-            <label for="fname">Time</label>
-            <input type="time" id="fname" name="fname" />
+            <label for="time">Time </label>
+            <input type="time" id="time" name="time" required />
           </div>
           <div class="info">
-            <label for="fname">Date</label>
-            <input type="date" id="fname" name="fname" />
+            <label for="date">Date </label>
+            <input type="date" id="date" name="date" required />
           </div>
-          <button type="button">Book Now</button>
+          <button type="button" onclick="submitForm()">Book Now</button>
         </form>
       </div>
     </div>

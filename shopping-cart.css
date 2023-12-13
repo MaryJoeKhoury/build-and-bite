@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: BakbakOne-Regular;
+  src: url("/fonts/bakbak/BakbakOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("/fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("/fonts/poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Ms-Madi;
+  src: url("/fonts/ms-madi/MsMadi-Regular.ttf");
+}
+
+.empty-cart {
+  /* width: 200px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+  /* margin-bottom: 100px; */
+  flex-direction: column;
+}
+
+.empty-cart img {
+  width: 170px;
+}
+
+.empty-cart p {
+  font-family: Bakbakone-Regular;
+}
+.main-footer {
+  margin-top: 200px;
+}

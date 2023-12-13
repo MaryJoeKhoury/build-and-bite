@@ -1166,3 +1166,28 @@ body {
   color: white;
   font-family: Ms-Madi;
 }
+
+#city {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid;
+}
+#city:focus-visible {
+  /* display: none; */
+  outline: none;
+}
+.contact-us__subinfo a {
+  color: #221516;
+  text-decoration: none;
+}
+.contact-us__subinfo a:hover {
+  text-decoration: underline;
+}
+
+.swal2-title {
+  font-family: Bakbakone-Regular;
+}
+
+.swal2-html-container {
+  font-family: Poppins-Regular;
+}

@@ -40,3 +40,47 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+const submitForm = () => {
+  const form = document.getElementById("bookingForm");
+  const formData = new FormData(form);
+
+  const postData = {};
+  formData.forEach((value, key) => {
+    postData[key] = value;
+  });
+
+  if (
+    !postData.name ||
+    !postData.email ||
+    !postData.city ||
+    !postData.phone ||
+    !postData.time
+  ) {
+    return Swal.fire({
+      title: `Oops...`,
+      text: "All fields are required!",
+      icon: "error",
+    });
+  }
+
+  fetch("http://127.0.0.1:8090/api/collections/reservations/records", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(postData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Response:", data);
+      Swal.fire({
+        title: `Welcome ${data.name} to Build & Bite 🙌!`,
+        text: "Your table has been reserved 🤩!",
+        icon: "success",
+      });
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+};

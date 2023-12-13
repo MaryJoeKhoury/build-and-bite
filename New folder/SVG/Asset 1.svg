@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1166.69 363">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        font-size: 298.96px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: FreestyleScript-Regular, 'Freestyle Script';
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-size: 300.98px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-1" d="m414.36,40.89s34,4,36-32l8-8s2.91-2,7.46,0,43.54,42,43.54,42c0,0,2,3.53,0,6.27s-6,7.73-6,7.73c0,0-13,1-15,2s105,101,105,101h12.03l82.97,78s8,28-28,30l-85-81,1-11-107-100-2,14-11,9-8-6h-7v-8l-3-3h-8v-8l-3-2h-8l-2-9-7-2s-7-7-4-10,8-10,8-10Z"/>
+      <g>
+        <circle class="cls-2" cx="665.86" cy="244.48" r="9.15"/>
+        <path class="cls-1" d="m651.86,8.39s-39,42-47,51,0,5,0,5l57-46s-37,38-48,50,1,6,1,6l57-47s-39,37-48,49,1,6,1,6l56.5-46.5s-36,37-57,60-40,13-40,13c-67.04,67.05-139.82,140.85-156,148-24,10-11-17-11-17,15.1-15.41,69.75-63.02,116.22-103.98l38.78-37.02s-10-18,24-43l55.5-47.5Z"/>
+      </g>
+      <text class="cls-3" transform="translate(8.02 259.19) scale(.79 1)"><tspan x="0" y="0">Build</tspan></text>
+      <text class="cls-4" transform="translate(763.02 264.53) scale(.78 1)"><tspan x="0" y="0">BITE</tspan></text>
+    </g>
+  </g>
+</svg>
